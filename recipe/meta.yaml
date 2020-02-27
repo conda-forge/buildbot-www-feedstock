@@ -1,18 +1,18 @@
 {% set name = "buildbot-www" %}
-{% set version = "2.6.0" %}
+{% set version = "2.7.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 2f5f46449978fba20e9c713e08a7b50255aa58baa54c16e376af85671eea515a
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: b1bfa9e4991b216cc8fe2ecaff6df64bca5b6f68e76f360077e3129cc96c1db5
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -32,12 +32,12 @@ test:
     - buildbot_www
 
 about:
-  home: "https://buildbot.net/"
-  license: "GNU General Public (GPL)"
-  license_family: "LGPL"
-  license_file: "LICENSE"
-  summary: "Buildbot UI"
-  doc_url: "https://docs.buildbot.net"
+  home: https://buildbot.net/
+  license: GNU General Public (GPL)
+  license_family: LGPL
+  license_file: LICENSE
+  summary: Buildbot UI
+  doc_url: https://docs.buildbot.net
 
 extra:
   recipe-maintainers:
