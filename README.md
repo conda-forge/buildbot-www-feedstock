@@ -3,7 +3,7 @@ About buildbot-www
 
 Home: https://buildbot.net/
 
-Package license: GNU General Public (GPL)
+Package license: GPL-2.0-or-later
 
 Feedstock license: BSD 3-Clause
 
