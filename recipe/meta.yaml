@@ -10,7 +10,7 @@ source:
   sha256: 76b595c340f82ba8256f94b5dca8ee8d0e923a5e607e8f8615ed6dbd37be07f7
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -30,11 +30,15 @@ requirements:
 test:
   imports:
     - buildbot_www
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://buildbot.net/
-  license: GNU General Public (GPL)
-  license_family: LGPL
+  license: GPL-2.0-or-later
+  license_family: GPL
   license_file: LICENSE
   summary: Buildbot UI
   doc_url: https://docs.buildbot.net
