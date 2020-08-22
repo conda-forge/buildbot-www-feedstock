@@ -5,7 +5,7 @@ Home: https://buildbot.net/
 
 Package license: GPL-2.0-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Buildbot UI
 
