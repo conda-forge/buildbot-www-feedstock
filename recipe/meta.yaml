@@ -1,5 +1,5 @@
 {% set name = "buildbot-www" %}
-{% set version = "2.10.1" %}
+{% set version = "2.10.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b78fcddfa33c7044031e33381c17fdd843ea2336c4682fe417ff89ce69495374
+  sha256: 1dc8d4b0be4763d5644554562d8cd5795c1287ddbfb843bdb6329914d90fe641
 
 build:
   number: 0
