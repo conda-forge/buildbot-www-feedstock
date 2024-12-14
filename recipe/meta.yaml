@@ -1,13 +1,13 @@
 {% set name = "buildbot-www" %}
-{% set version = "4.1.0" %}
+{% set version = "4.2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: f9988e91364b770aac65f0295ba690c683646dc142681e011c48cc4d9225f918
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: a5de99ceb147281fda71f7ee33b4f152d5d1b194cc232a14595a888a29491ffb
 
 build:
   number: 0
